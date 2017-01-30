@@ -4,7 +4,7 @@
 public class Pet {
     private String name;
 
-    public void speak() {
-
+    public String speak() {
+        return "";
     }
 }
