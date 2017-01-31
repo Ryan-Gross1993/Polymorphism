@@ -21,20 +21,19 @@ public class Controller {
     }
 
     public int askUserForNumberOfPets() {
-        System.out.println("How many pets do you have?");
-
+        getDisplay().displayNumber();
         int answer =  getDisplay().getScanner().nextInt();
         return answer;
     }
 
     public String askUserForPetName() {
-        System.out.println("What's the pet's name?");
+        getDisplay().displayName();
         String answer = getDisplay().getScanner().next();
         return answer;
     }
 
     public String askUserForPetType() {
-        System.out.println("What kind of pet is it?");
+        getDisplay().displayType();
         String answer = getDisplay().getScanner().next();
         return answer;
     }
@@ -50,20 +49,9 @@ public class Controller {
         }
     }
 
-    public void displayPet(Pet aPet) {
-        System.out.println("Your pet " + aPet.getName() + " is a " + aPet.getClass().getSimpleName() + "\n" +
-                            aPet.getName() + " says, " + aPet.speak());
-    }
-
-    public void displayAllPets() {
-        for(int i = 0 ; i < getPetManagement().getAllPets().size(); i++) {
-            displayPet(getPetManagement().getAllPets().get(i));
-        }
-    }
-
     public void run() {
         askUserForPetInfo();
-        displayAllPets();
+        getDisplay().displayAllPets(getPetManagement());
     }
 
 
