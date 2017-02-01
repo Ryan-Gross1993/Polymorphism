@@ -16,7 +16,7 @@ public class DogTest {
     @Test
     public void speakTest() {
         Assert.assertEquals("Bork", aDog.speak());
-        Assert.assertFalse(aDog.speak().equals("Moo"));
+
     }
 
 }

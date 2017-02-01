@@ -4,24 +4,21 @@
 public class PetFactory {
 
     public Pet makeAPet(String aName, String aType) {
-        switch (aName) {
+        Pet aPet;
+        switch (aType) {
             case "dog":
-                Dog dog = new Dog();
-                dog.setName(aName);
-                return dog;
-
+                aPet = new Dog();
+                break;
             case "cat":
-                Cat cat = new Cat();
-                cat.setName(aName);
-                return cat;
+                aPet = new Cat();
+                break;
             case "cow":
-                Cow cow = new Cow();
-                cow.setName(aName);
-                return cow;
+                aPet = new Cow();
+                break;
             default:
-                Cat aCat = new Cat();
-                aCat.setName(aName);
-                return aCat;
+                aPet = new Cat();
         }
+        aPet.setName(aName);
+        return aPet;
     }
 }

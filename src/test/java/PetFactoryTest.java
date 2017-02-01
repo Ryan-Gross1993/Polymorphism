@@ -16,7 +16,7 @@ public class PetFactoryTest {
     @Test
     public void makePetTest() {
         Pet aPet = aPF.makeAPet("lorraine","cat");
-        Assert.assertTrue(aPet.getClass().getSuperclass().getSimpleName().equals("Pet"));
+        Assert.assertTrue(aPet instanceof Cat);
+        Assert.assertEquals("lorraine", aPet.getName());
     }
-
 }

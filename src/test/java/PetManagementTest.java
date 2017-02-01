@@ -19,5 +19,6 @@ public class PetManagementTest {
         Cat aCat = new Cat();
         aPM.addPetToList(aCat);
         Assert.assertEquals(1, aPM.getAllPets().size());
+        Assert.assertEquals(aCat, aPM.getAllPets().get(0));
     }
 }

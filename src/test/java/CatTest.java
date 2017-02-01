@@ -16,6 +16,5 @@ public class CatTest {
     @Test
     public void speakTest() {
         Assert.assertEquals("Meow", aCat.speak());
-        Assert.assertFalse(aCat.speak().equals("bork"));
     }
 }
