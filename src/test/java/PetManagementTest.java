@@ -2,6 +2,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by ryangross on 1/31/17.
  */
@@ -12,7 +15,6 @@ public class PetManagementTest {
     public void setUp() {
         aPM = new PetManagement();
     }
-
 
     @Test
     public void addPetToListTest() {
