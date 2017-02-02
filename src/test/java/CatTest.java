@@ -8,7 +8,7 @@ import org.junit.Test;
 public class CatTest {
     Cat aCat;
     Cat bCat;
-    Dog fuck;
+    Dog aDog;
 
     @Before
     public void setUp() {
@@ -16,7 +16,7 @@ public class CatTest {
         bCat = new Cat();
         aCat.setName("A");
         bCat.setName("B");
-        fuck.setName("derp");
+        aDog.setName("derp");
     }
 
     @Test
@@ -27,6 +27,6 @@ public class CatTest {
     @Test
     public void compareToTest() {
         Assert.assertEquals(-1, aCat.compareTo(bCat));
-        Assert.assertEquals(1, fuck.compareTo(aCat));
+        Assert.assertEquals(1, aDog`.compareTo(aCat));
     }
 }
