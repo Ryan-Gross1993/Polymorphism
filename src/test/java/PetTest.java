@@ -32,7 +32,7 @@ public class PetTest {
     public void compareToTest() {
         Assert.assertEquals(0, aDog.compareTo(bDog));
         Assert.assertTrue(aCat.compareTo(bDog) > 1);
-        
+
 
     }
 }
