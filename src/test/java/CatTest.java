@@ -14,6 +14,7 @@ public class CatTest {
     public void setUp() {
         aCat = new Cat();
         bCat = new Cat();
+        aDog = new Dog();
         aCat.setName("A");
         bCat.setName("B");
         aDog.setName("derp");
@@ -27,6 +28,6 @@ public class CatTest {
     @Test
     public void compareToTest() {
         Assert.assertEquals(-1, aCat.compareTo(bCat));
-        Assert.assertEquals(1, aDog`.compareTo(aCat));
+        Assert.assertTrue( aDog.compareTo(aCat) > 1);
     }
 }

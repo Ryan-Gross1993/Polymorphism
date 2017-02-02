@@ -1,3 +1,5 @@
+
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +17,7 @@ public class PetComparableTest {
     ArrayList<Pet> test = new ArrayList();
 
     @Before
+
     public void setUp() {
         aCow = new Cow();
         aCat = new Cat();
@@ -27,7 +30,6 @@ public class PetComparableTest {
         test.add(aDog);
         Collections.sort(test);
     }
-
 
     @Test
     public void compareToTest() {
